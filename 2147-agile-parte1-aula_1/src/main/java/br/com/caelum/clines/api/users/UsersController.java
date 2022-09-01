@@ -49,6 +49,5 @@ public class UsersController {
 	public ResponseEntity<Void> delete(@PathVariable Long id){
 		usersService.delete(id);
 		return new ResponseEntity<>(HttpStatus.ACCEPTED);
-	}
-	
+	}	
 }
