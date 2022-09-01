@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:clines}
+    username: postgres
+    password: th248605
+    #${DB_USER:postgres}
+    #${DB_PASSWORD:postgres}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+cors:
+  allowed:
+    origins: ${CORS_HOST:http://localhost:3000}
+    all-methods: true
+    all-headers: true
+    send-credentials: true
