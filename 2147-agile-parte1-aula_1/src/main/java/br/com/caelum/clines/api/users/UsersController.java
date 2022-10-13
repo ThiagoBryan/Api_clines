@@ -26,7 +26,7 @@ public class UsersController {
 
 	@PostMapping
 	public ResponseEntity<String> save(@RequestBody UsersForm usersForm) {
-		return ResponseEntity.ok(usersService.createUsers(usersForm));
+		return new ResponseEntity<String>(usersService.createUsers(usersForm), HttpStatus.CREATED);
 	}
 
 	@GetMapping

@@ -42,4 +42,13 @@ public class Users {
 		
 	}
 
+	public Users(Long id, @NotNull String name, String email, @NotNull String password, String infoUsers) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.email = email;
+		this.password = password;
+		this.infoUsers = infoUsers;
+	}
+
 }

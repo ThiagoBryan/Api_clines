@@ -9,7 +9,7 @@ import br.com.caelum.clines.shared.domain.Users;
 
 public interface UsersRepository extends Repository<Users, Long> {
 
-	Optional<UsersForm> findByEmail(String email);
+	Optional<Users> findByEmail(String email);
 	Optional<Users> findById(Long id);
 	
 	List<Users> findAll();
